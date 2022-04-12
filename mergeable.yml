@@ -1,0 +1,24 @@
+version: 2
+mergeable:
+  - when: pull_request.*
+    validate:
+      - do: title
+        must_include:
+          regex: \[(patch|minor|major|no-version)\]
+          message: 'Please ensure the title is prefixed with a SemVer identifier ([Major], [Minor], [Patch] or [No-Version])'
+      - do: title
+        must_include:
+          regex: \[[A-Z]{2,6}-\d+\]|\[no-ticket\]
+          message: 'Please ensure the title includes the ticket number in square brackets. If no ticket is required (this should be rare), use [No-Ticket]'
+      - do: description
+        must_exclude:
+          regex: Add a list or brief description of the changes here.
+          message: 'Please ensure you have provided a Change Summary'
+      - do: description
+        must_exclude:
+          regex: Add anything extra which would beneficial for the review here
+          message: 'Please ensure you have provided a Description'     
+      - do: description     
+        no_empty:
+          enabled: true
+          message: 'Please ensure you have provided a Description'
