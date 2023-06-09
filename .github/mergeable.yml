@@ -5,17 +5,17 @@ mergeable:
       - do: title
         must_include:
           regex: \[(Patch|Minor|Major|No-Version)\]
-          regexFlag: "none"
+          regex_flag: "none"
           message: "Please ensure the title is prefixed with a SemVer identifier in PascalCase ([Major], [Minor], [Patch] or [No-Version])"
       - do: title
         must_include:
           regex: \[[A-Z]{2,6}-\d+\]|\[No-Ticket\]
-          regexFlag: "none"
+          regex_flag: "none"
           message: "Please ensure the title includes the ticket number in square brackets. If no ticket is required (this should be rare), use [No-Ticket]"
       - do: title
         must_include:
           regex: ^(\[[A-Z]{2,6}-\d+\]|\[No-Ticket\]) (\[(Patch|Minor|Major|No-Version)\])
-          regexFlag: "none"
+          regex_flag: "none"
           message: "Please ensure the ticket is in the beginning followed by a space and then the SemVer identifier. Eg: [ENG-1234] [Minor]"
       - do: description
         must_exclude:
