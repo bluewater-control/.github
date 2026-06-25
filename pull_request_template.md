@@ -9,4 +9,4 @@
 - [ ] Security design - OWASP Top 10 risks are mitigated
 
 # 💬 Other Requirements
-- [ ] Communication - Changes that will affect other teams have been communicated in slack
+- [ ] Communication - Changes that will affect other teams have been communicated in Slack
