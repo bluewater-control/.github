@@ -1,12 +1,32 @@
-# ⚙️ Technical Requirements
+## 📝 What changed?
 
-- [ ] Clean code – well formatted code, proper indentation, only needed usings, general coding convention as described by Microsoft
-- [ ] Readable code – well written code barely requires inline comments. Proper naming, structure of code blocks, OOP principles, AOP principles, SOLID principles, etc.
-- [ ] Functional code – implementation performs the task in the best way possible. It's performant, isolated and generic enough
-- [ ] Design patterns – applied with thought and where needed to serve the purpose they are supposed to. They go along with the platform architecture and they do not break any concepts we have already set
-- [ ] API design – APIs are resource oriented, easy to read, proper HTTP verbs, correct status code results
-- [ ] API documentation - public endpoints are documented in Swagger, non-public ones are hidden from Swagger
-- [ ] Security design - OWASP Top 10 risks are mitigated
+<!-- If needed,riefly explain any extra context not covered in the Jira ticket. -->
 
-# 💬 Other Requirements
-- [ ] Communication - Changes that will affect other teams have been communicated in Slack
+## Review Checklist
+
+> ![NOTE] By submitting this PR, I confirm that I have considered each item in the checklist below and taken appropriate action.
+
+### ⚙️ General
+
+- [ ] Code quality and design (all of the following):
+  - Follows existing architecture and design patterns
+  - Follows Microsoft coding conventions
+  - Well-formatted
+  - Readable
+  - Functional
+- [ ] [OWASP Top 10](https://owasp.org/Top10) risks are mitigated
+
+#### 📡 API Design
+
+- [ ] Consistency
+  - Resource oriented
+  - Easy to read
+  - Proper HTTP verbs
+  - Correct status code results
+- [ ] Documentation
+  - Public endpoints are documented in Swagger
+  - Non-public ones are hidden from Swagger
+
+### 💬 Other
+
+- [ ] Communication - If this change affects other teams, it has been communicated in Slack
